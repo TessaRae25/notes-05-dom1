@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>The DOM, Part 1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,8 +21,33 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+       <h1>Manipulating Things in the DOM</h1>
 
+       <p>Javascript uses the DOM to manipulate various elements in an HTML document. The DOM stands for Document Object Model, and it represents every element in an HTML document. When you use Javascript to change, edit or otherwise modify the DOM, youa re said to be "traversing the DOM".</p>
+
+       <p class="getThisQuery">Get This and change it using Javascript's querySelector method.</p>
+
+       <p>querySelector() is a Javascript method that allows you to reach into an HTML document and selec either a class (.) or an id (#) to perform some kind og method or function on it. In the above example, we used querySelector() to grab getThisQuery and then used textContent(), another method, to change the text using Javascript.</p>
+
+       <h2>Manipulating Things Using getElementById</h2>
+
+       <p>getElementById uses the ID attribute in your HTML elements to select then edit and modify your HTML. It is an older method, but is widely supported. getElementbyId, only works on IDs (#).</p>
+
+       <p id="getThisId"> Get this using Javascript getElementById.</p>
+
+
+       <h2>Getting input from an HTML Form</p>
+
+        
+            <p>What's your favorite animal?</p>
+
+            <input type="text" class="myAnimal" placeholder="enter your favorite animal here...">
+
+            <input type="submit" onclick="submitAnswer()" value="Submit">
+
+            <p id="response"></p>
+
+        
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
